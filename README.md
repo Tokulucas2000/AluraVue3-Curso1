@@ -16,7 +16,7 @@
 9. Then type "npm i" or "npm install" download all the dependencies
 10. For run the project on the terminal type "npm run dev"
 
-## Order to follow the comments in the code
+## Order to follow the comments in the code to understando how vue works
 1. Acess the file "index.html", you can type "CTRL + P" and type the file name, this file has a "/src/main.ts" which VUE uses JS(TS) to acess .vue 
 2. Go to the file "main.ts"
 3. Then go to "App.vue"
