@@ -1,4 +1,5 @@
 <template>
+  <!-- Here the component is builded -->
   <header class="banner">
     <div class="apresentacao">
       <img src="../assets/imagens/logo.svg" alt="Logo do Cookin' Up" class="logo">
