@@ -22,6 +22,7 @@ export default {
     </header>
 
     <ul class="categoria__ingredientes">
+      <!-- Understanding v-for -->
       <!-- v-for is necessary to run the entire list in this case the list is "ingrediente" and ":key" is a unique identifier for each element -->
       <!-- The key must be a primitive value for example a string or a int -->
       <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente">
