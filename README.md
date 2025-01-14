@@ -1,8 +1,8 @@
-# Basic commands
+# Vue3 course notes
 
 ## Important notes
-There are many comments in the code that helps understanding what was explaned on the course
-Bellow we have commands to start the project and after the order in which the project was build 
+**There are many comments in the code that helps understanding what was explaned on the course
+Bellow we have commands to start the project and after the order in which the project was build **
 
 ## Start a project 
 1. npm create vue@(version for example 3.7.3)
@@ -17,3 +17,7 @@ Bellow we have commands to start the project and after the order in which the pr
 10. For run the project on the terminal type "npm run dev"
 
 ##Order to follow the comments in the code
+1. Acess the file "index.html", you can type "CTRL + P" and type the file name, this file has a "/src/main.ts" which VUE uses JS(TS) to acess .vue 
+2. Go to the file "main.ts"
+3. Then go to "App.vue"
+4. Important to note to import some compenent it's necessary that the component exists so create the component first than import
