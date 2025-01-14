@@ -1,8 +1,8 @@
 # Vue3 course notes
 
 ## Important notes
-**There are many comments in the code that helps understanding what was explaned on the course
-Bellow we have commands to start the project and after the order in which the project was build **
+**There are many comments in the code that helps understanding what was explaned on the course **
+**Bellow we have commands to start the project and after the order in which the project was build **
 
 ## Start a project 
 1. npm create vue@(version for example 3.7.3)
