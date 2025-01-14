@@ -21,3 +21,4 @@
 2. Go to the file "main.ts"
 3. Then go to "App.vue"
 4. Important to note to import some compenent it's necessary that the component exists so create the component first than import
+5. Search for "Understanding v-for" in the file you will have acess how the v-for works with examples
