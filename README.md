@@ -1,5 +1,9 @@
 # Basic commands
 
+## Important notes
+There are many comments in the code that helps understanding what was explaned on the course
+Bellow we have commands to start the project and after the order in which the project was build 
+
 ## Start a project 
 1. npm create vue@(version for example 3.7.3)
 2. If it's the first time using the command above, the terminal will request to install, so accept
@@ -11,3 +15,5 @@
 8. On the VS Code, use the command "CTRL + J", so you will acess the VSCode terminal
 9. Then type "npm i" or "npm install" download all the dependencies
 10. For run the project on the terminal type "npm run dev"
+
+##Order to follow the comments in the code
