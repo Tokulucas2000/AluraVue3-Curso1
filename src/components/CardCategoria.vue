@@ -7,6 +7,7 @@ import IngredienteSelecionavel from './IngredienteSelecionavel.vue';
 export default {
   props: {
     //Definig the type of categoria based on ICategoria
+    //Importing component #2
     categoria: { type: Object as PropType<ICategoria>, required: true }
   },
   components: { Tag, IngredienteSelecionavel },
@@ -26,7 +27,8 @@ export default {
       <!-- Understanding v-for -->
       <!-- v-for is necessary to run the entire list in this case the list is "ingrediente" and ":key" is a unique identifier for each element -->
       <!-- The key must be a primitive value for example a string or a int -->
-      <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente">
+       <!-- Importing component #3 -->
+      <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente"> /* Using the data saved on cateria imported from the SelecionarIngredientes */
         <IngredienteSelecionavel
           :ingrediente="ingrediente"
           @adicionar-ingrediente="$emit('adicionarIngrediente', $event)"

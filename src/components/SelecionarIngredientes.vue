@@ -32,6 +32,7 @@ export default {
 
     <ul class="categorias">
       <li v-for="categoria in categorias" :key="categoria.nome">
+        <!-- Importing component #1 -->
         <!-- Importing the component CardCategoria and also sending information to load datas on the component -->
          <!-- Passing the data to the component in the line 38 -->
         <CardCategoria        
