@@ -22,3 +22,4 @@
 3. Then go to "App.vue"
 4. Important to note to import some compenent it's necessary that the component exists so create the component first than import
 5. Search for "Understanding v-for" in the file you will have acess how the v-for works with examples
+6. Search for "How V-IF works", "V-ELSE-IF" and "V-ELSE" and follow this order in the file
