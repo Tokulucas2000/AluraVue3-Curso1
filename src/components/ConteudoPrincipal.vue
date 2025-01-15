@@ -33,12 +33,13 @@ export default {
     <SuaLista :ingredientes="ingredientes" />
 
     <KeepAlive include="SelecionarIngredientes">
+      <!-- How V-IF works => the component will show if the condition is true -->
       <SelecionarIngredientes v-if="conteudo === 'SelecionarIngredientes'"
         @adicionar-ingrediente="adicionarIngrediente"
         @remover-ingrediente="removerIngrediente"
         @buscar-receitas="navegar('MostrarReceitas')"
       />
-  
+      <!-- How V-ELSE-IF works => the component also will show if the condition is true, you can use this one only if you have a V-IF before -->
       <MostrarReceitas v-else-if="conteudo === 'MostrarReceitas'"
         :ingredientes="ingredientes"
         @editar-receitas="navegar('SelecionarIngredientes')"

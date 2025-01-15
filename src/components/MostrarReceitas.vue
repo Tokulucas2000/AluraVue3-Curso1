@@ -40,7 +40,6 @@ export default {
     <p class="paragrafo-lg resultados-encontrados">
       Resultados encontrados: {{ receitasEncontradas.length }}
     </p>
-
     <div v-if="receitasEncontradas.length" class="receitas-wrapper">
       <p class="paragrafo-lg informacoes">
         Veja as opções de receitas que encontramos com os ingredientes que você tem por aí!
@@ -52,7 +51,7 @@ export default {
         </li>
       </ul>
     </div>
-
+    <!-- How V-ELSE works => the component will show if the condition is neither what V-IF nor V-ELSE-IF -->
     <div v-else class="receitas-nao-encontradas">
       <p class="paragrafo-lg receitas-nao-encontradas__info">
         Ops, não encontramos resultados para sua combinação. Vamos tentar de novo?
