@@ -1,3 +1,5 @@
+//Importing data #2
+//Import the interfaces
 import type ICategoria from "@/interfaces/ICategoria";
 import type IReceita from "@/interfaces/IReceita";
 

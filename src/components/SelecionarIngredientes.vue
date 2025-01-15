@@ -1,4 +1,5 @@
 <script lang="ts">
+//Importing the requisition function from index.ts
 import { obterCategorias } from '@/http/index';
 import type ICategoria from '@/interfaces/ICategoria';
 import CardCategoria from './CardCategoria.vue';
@@ -7,11 +8,13 @@ import BotaoPrincipal from './BotaoPrincipal.vue';
 export default {
   name: 'SelecionarIngredientes',
   data() {
-    return {
-      categorias: [] as ICategoria[]
+    return {      
+      categorias: [] as ICategoria[] //Define the type of categorias based on ICategoria
     };
   },
+  //Created lifecycle hook will be execeuted after the definition of the data() function
   async created() {
+    //Importing data #3
     this.categorias = await obterCategorias();
   },
   components: { CardCategoria, BotaoPrincipal },
@@ -29,8 +32,10 @@ export default {
 
     <ul class="categorias">
       <li v-for="categoria in categorias" :key="categoria.nome">
-        <CardCategoria
-          :categoria="categoria"
+        <!-- Importing the component CardCategoria and also sending information to load datas on the component -->
+         <!-- Passing the data to the component in the line 38 -->
+        <CardCategoria        
+          :categoria="categoria"  
           @adicionar-ingrediente="$emit('adicionarIngrediente', $event)"
           @remover-ingrediente="$emit('removerIngrediente', $event)"
         />

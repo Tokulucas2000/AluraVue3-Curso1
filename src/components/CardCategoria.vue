@@ -6,6 +6,7 @@ import IngredienteSelecionavel from './IngredienteSelecionavel.vue';
 
 export default {
   props: {
+    //Definig the type of categoria based on ICategoria
     categoria: { type: Object as PropType<ICategoria>, required: true }
   },
   components: { Tag, IngredienteSelecionavel },
