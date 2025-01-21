@@ -4,6 +4,7 @@ import SelecionarIngredientes from './SelecionarIngredientes.vue';
 import SuaLista from './SuaLista.vue';
 import Tag from './Tag.vue';
 
+//Defining the type of the page, in a simple way it's the url of the page
 type Pagina = 'SelecionarIngredientes' | 'MostrarReceitas';
 
 export default {
@@ -15,12 +16,15 @@ export default {
   },
   components: { SelecionarIngredientes, Tag, SuaLista, MostrarReceitas },
   methods: {
+    //Adding ingredient to the list
     adicionarIngrediente(ingrediente: string) {
       this.ingredientes.push(ingrediente)
     },
+    //Removing ingredient from the list
     removerIngrediente(ingrediente: string) {
       this.ingredientes = this.ingredientes.filter(iLista => ingrediente !== iLista);
     },
+    //Navigating between pages
     navegar(pagina: Pagina) {
       this.conteudo = pagina;
     }

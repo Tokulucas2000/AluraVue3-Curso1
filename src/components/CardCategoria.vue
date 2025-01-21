@@ -18,6 +18,7 @@ export default {
 <template>
   <article class="categoria">
     <header class="categoria__cabecalho">
+      <!-- importing image src must have the bind, so use ":src" -->
       <img :src="`/imagens/icones/categorias_ingredientes/${categoria.imagem}`" alt="" class="categoria__imagem">
 
       <h2 class="paragrafo-lg categoria__nome">{{ categoria.nome }}</h2>
@@ -28,9 +29,11 @@ export default {
       <!-- v-for is necessary to run the entire list in this case the list is "ingrediente" and ":key" is a unique identifier for each element -->
       <!-- The key must be a primitive value for example a string or a int -->
        <!-- Importing component #3 -->
-      <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente"> /* Using the data saved on cateria imported from the SelecionarIngredientes */
-        <IngredienteSelecionavel
-          :ingrediente="ingrediente"
+       <li v-for="ingrediente in categoria.ingredientes" :key="ingrediente"> 
+        <!-- Using the data saved on categoria imported from the SelecionarIngredientes -->
+         <!-- $event to acess the event that was sending -->
+       <IngredienteSelecionavel
+          :ingrediente="ingrediente"          
           @adicionar-ingrediente="$emit('adicionarIngrediente', $event)"
           @remover-ingrediente="$emit('removerIngrediente', $event)"
         />

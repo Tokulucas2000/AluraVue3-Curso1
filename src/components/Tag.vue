@@ -2,12 +2,14 @@
 export default {
   props: {
     texto: { type: String, required: true },
-    ativa: Boolean
+    ativa: Boolean // default value is false
   }
 }
 </script>
 
 <template>
+  <!-- Applyng css with condition -->
+  <!-- Applyng css based on ativa bool value, definig if the class will be "tag" or "tag.ativa" -->
   <span :class="['tag', { ativa }]">
     {{ texto }}
   </span>
