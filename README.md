@@ -25,4 +25,8 @@
 6. Search for "How V-IF works", "V-ELSE-IF" and "V-ELSE" and follow this order in the file
 7. To understando how to create the part of import data with pattern search for "Importing data #1", 1 to 4
 8. Search for "created()" to understando how it's work
-9. Search for "Importing component #1", 1 to 3, to understando how to import a component data 
+9. Search for "Importing component #1", 1 to 3, to understando how to import a component data
+10. Using imagens in a dynamic way use ":src", search for ":src" in the files
+11. To apply css with condition search for "Applyng css with condition" in the files
+12. For "$emit"m, search for "Emit note"
+13. $event is used to access the event object triggered in methods or event handlers within templates
