@@ -35,7 +35,7 @@ export default {
 <template>
   <main class="conteudo-principal">
     <SuaLista :ingredientes="ingredientes" />
-
+    <!-- KeepAlive keep the components values in cache, so if the get changed if you get back the values will stay de same -->
     <KeepAlive include="SelecionarIngredientes">
       <!-- How V-IF works => the component will show if the condition is true -->
       <SelecionarIngredientes v-if="conteudo === 'SelecionarIngredientes'"
