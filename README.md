@@ -30,3 +30,4 @@
 11. To apply css with condition search for "Applyng css with condition" in the files
 12. For "$emit"m, search for "Emit note"
 13. $event is used to access the event object triggered in methods or event handlers within templates
+14. Search for "KeepAlive" to understand how it's work
